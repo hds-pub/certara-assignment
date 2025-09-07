@@ -2,6 +2,7 @@
   "name": "certara-assignment",
   "version": "0.0.0",
   "scripts": {
+    "build:netlify": "ng build --configuration=production",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",

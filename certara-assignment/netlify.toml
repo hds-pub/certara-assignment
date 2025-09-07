@@ -1,5 +1,6 @@
 [build]
-  command = "ng build --configuration=production"
+  base = "."
+  command = "npm ci && npm run build:netlify && ls -la dist && ls -la dist/certara-assignment && ls -la dist/certara-assignment/browser"
   publish = "dist/certara-assignment/browser"
 
 [[redirects]]

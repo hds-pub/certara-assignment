@@ -12,9 +12,7 @@ interface SearchResponse {
 export class JobsService {
   private http = inject(HttpClient);
 
-  // Uses a proxy path locally in dev. Run: ng serve --proxy-config proxy.conf.json
-  private readonly url = '/api/ats/search/all';
-  // Full url will cause CORS errors in the browser running locally: 'https://dsg-api-test.k2-app.com/ats/search/all'
+  private readonly url = 'https://dsg-api-test.k2-app.com/ats/search/all'
 
   /** Cached, shared stream of jobs (one network call, shared across subscribers). */
   readonly jobs$: Observable<JobDescription[]> = this.http.get<SearchResponse>(this.url).pipe(

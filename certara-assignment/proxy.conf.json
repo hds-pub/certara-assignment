@@ -1,9 +1,0 @@
-{
-  "/api": {
-    "target": "https://dsg-api-test.k2-app.com",
-    "changeOrigin": true,
-    "secure": true,
-    "logLevel": "debug",
-    "pathRewrite": { "^/api": "" }
-  }
-}
